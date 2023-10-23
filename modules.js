@@ -1,4 +1,4 @@
-const xyz = require('./people');
+const { people } = require('./people');
 
-console.log(xyz);
-// output: { people: [ 'John', 'Doe', 'Jane', 'Doe' ], ages: [ 20, 25, 30, 35 ] }
+console.log(people, xyz.ages);
+// output: [ 'John', 'Doe', 'Jane', 'Doe' ] undefined
