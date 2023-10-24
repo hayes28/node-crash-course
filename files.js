@@ -5,9 +5,10 @@ fs.readFile('./docs/blog1.txt', (err, data) => {
     if (err) {
         console.log(err);
     }
-    console.log(data);
+    console.log(data.toString());
 });
-// output: <Buffer > - package of data, a way of representing binary data
+// output: <Buffer > - package of data, a way of representing binary data output: <Buffer 68 65 6c 6c 6f 2c 20 77 6f 72 6c 64 21>
+// by adding .toString(), we can see the data as a string output: hello, world!(in blog1.txt)
 
 // write files
 
