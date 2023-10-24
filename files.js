@@ -15,17 +15,23 @@ const fs = require('fs');
 // // since the readFile is asynchronous, it will run in the background while the rest of the code runs
 
 // write files
-fs.writeFile('./docs/blog1.txt', 'Hello, Heather!', () => {
-    console.log('file was written');
-});
-// Overwrites existing file output: file was written
+// fs.writeFile('./docs/blog1.txt', 'Hello, Heather!', () => {
+//     console.log('file was written');
+// });
+// // Overwrites existing file output: file was written
 
-fs.writeFile('./docs/blog2.txt', 'Hello, again!', () => {
-    console.log('file was written');
-});
+// fs.writeFile('./docs/blog2.txt', 'Hello, again!', () => {
+//     console.log('file was written');
+// });
 // Makes the file if doesn't exist output: file was written, file was written
 
 // directories
-
+fs.mkdir('./assets', (err) => {
+    if (err) {
+        console.log(err);
+    }
+    console.log('folder created');
+});
+// Creates a folder, output: folder created
 
 // delete files
