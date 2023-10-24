@@ -3,7 +3,8 @@
 const fs = require('fs');
 
 // reading files - Streams
-const readStream = fs.createReadStream('./docs/blog3.txt');
+const readStream = fs.createReadStream('./docs/blog3.txt', { encoding: 'utf8' });
+// utf8 is the default encoding
 
 // data is an event that fires when we receive data
 readStream.on('data', (chunk) => {
