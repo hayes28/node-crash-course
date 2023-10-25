@@ -1,0 +1,26 @@
+{
+  "dependencies": {
+    "lodash": "^4.17.21",
+    "node": "^21.0.0"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "name": "crash-course",
+  "description": "Course files for the Node.js Crash Course tutorial series on The Net Ninja YouTube channel.",
+  "version": "1.0.0",
+  "main": "files.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hayes28/node-crash-course.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hayes28/node-crash-course/issues"
+  },
+  "homepage": "https://github.com/hayes28/node-crash-course#readme"
+}
